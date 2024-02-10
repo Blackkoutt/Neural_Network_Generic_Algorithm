@@ -1,3 +1,14 @@
+# Table Of Content
+
+- [General info](#general-info)
+    - [Functionalities](#functionalities)
+    - [Neural network](#neural-network)
+    - [Genetic algorithm](#genetic-algorithm)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+    - [Instruction](#instruction)
+    - [Additional informations](#additional-informations)
+
 # General info
 The problem addressed in the field of artificial intelligence is the determination of
 collection of cities only those that are worth visiting and then based on
@@ -198,3 +209,41 @@ value of the fitness function. To return to program execution, simply close it
 window with a chart.
 
 **7. End program** – ends program execution
+
+### Additional informations
+**All data used by the program can be freely modify. However, it is worth following the instructions presented in the files
+pattern. Otherwise, you may expose yourself to the unexpected
+program behavior.** The data is located in the directory
+NeuralNetwork/bin/Debug/net6.0/ in files:
+- TrainingData.txt – neural network training data
+- ClassificationData.txt – data subjected to classification by the neural network
+to designate cities worth visiting
+- CitiesDist.txt – data on the distance between each city
+cities
+
+If you add a new city to the ClassificationData.txt file **you must
+also add them to the CitiesDist.txt file, specifying its distance from the others
+cities included in this file according to the formula.**
+
+When changing the starting city in the CitiesDist.txt file, **make sure that
+it is also in the ClassificationData.txt file and has all
+attribute values ​​preferably as 1 so that the network can add them correctly to
+lists of cities worth visiting**. Otherwise, you may endanger yourself
+to unexpected program behavior.
+
+If you want to use the program's option to generate charts, **it is necessary
+having the Python interpreter installed and installed
+matplotlib.pyplot library**, because the program runs scripts written in
+Python that generates charts.
+
+
+> [!TIP]
+> The python interpreter can be downloaded from the official website **[python.org]**
+or **from Microsoft Store** (it is best to choose the latest version 3.11) - it's worth it
+is to install it in the default directory, no impact is expected
+another location for the interpreter to execute scripts
+generating charts
+
+> [!TIP]
+> The matplotlib library can be installed after installation
+Python interpreter by typing this command in the system console: **"pip install matplotlib"**
